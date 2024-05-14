@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#972F3939"
+    android:orientation="vertical"
+    tools:context=".Delete">
+
+    <EditText
+        android:id="@+id/playerIdEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:gravity=""
+        android:hint="Enter Player ID: "
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        android:textSize="22sp"
+        tools:ignore="MissingConstraints" />
+
+
+    <Button
+        android:id="@+id/retrieveButton"
+        android:layout_width="132dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/playerIdEditText"
+        android:layout_marginStart="263dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="625dp"
+        android:backgroundTint="#6619376A"
+        android:onClick="searchPlayer"
+        android:text="Search"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/retrieveButton"
+        android:layout_marginTop="644dp"
+        android:layout_marginBottom="39dp"
+        android:backgroundTint="#6619376A"
+        android:onClick="deletePlayer"
+        android:text="Delete Player"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="374dp"
+        android:layout_height="453dp"
+        android:src="@drawable/del"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/playerIdEditText"
+        app:layout_constraintVertical_bias="0.455" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

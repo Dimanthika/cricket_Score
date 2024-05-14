@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#972F3939"
+    android:orientation="vertical"
+    tools:context=".UpdatePlayer">
+
+    <EditText
+        android:id="@+id/playerIdEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="684dp"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:gravity=""
+        android:hint="Enter Player ID:"
+        android:inputType="number"
+        android:textColorHint="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/retrieveButton"
+        android:layout_width="132dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/playerIdEditText"
+        android:backgroundTint="#6619376A"
+        android:text="Search"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.967"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.068" />
+
+
+    <EditText
+        android:id="@+id/playerAgeTextView"
+        android:layout_width="221dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="182dp"
+        android:layout_marginTop="243dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="448dp"
+        android:gravity=""
+        android:text="Player Age"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/playerScoreTextView"
+        android:layout_width="221dp"
+        android:layout_height="41dp"
+        android:layout_below="@id/playerAgeTextView"
+        android:layout_marginStart="182dp"
+        android:layout_marginTop="311dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="380dp"
+        android:gravity=""
+        android:text="Player Score"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/playerOverTextView"
+        android:layout_width="221dp"
+        android:layout_height="41dp"
+        android:layout_below="@id/playerScoreTextView"
+        android:layout_marginStart="182dp"
+        android:layout_marginTop="380dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="311dp"
+        android:gravity=""
+        android:text="Faced Overs"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/playerCenTextView"
+        android:layout_width="221dp"
+        android:layout_height="41dp"
+        android:layout_below="@id/playerOverTextView"
+        android:layout_marginStart="182dp"
+        android:layout_marginTop="449dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="242dp"
+        android:gravity=""
+        android:text="Player Centuries"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/playerHcenTextView"
+        android:layout_width="221dp"
+        android:layout_height="41dp"
+        android:layout_below="@id/playerCenTextView"
+        android:layout_marginStart="182dp"
+        android:layout_marginTop="514dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="177dp"
+        android:gravity=""
+        android:text="Player Half-Centuries"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/playerWicketTextView"
+        android:layout_width="221dp"
+        android:layout_height="41dp"
+        android:layout_below="@id/playerHcenTextView"
+        android:layout_marginStart="182dp"
+        android:layout_marginTop="579dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="112dp"
+        android:gravity=""
+        android:text="Player Wickets"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_width="390dp"
+        android:layout_height="54dp"
+        android:layout_below="@id/playerWicketTextView"
+        android:backgroundTint="#6619376A"
+        android:text="Update Record"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.954" />
+
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="182dp"
+        android:layout_height="41dp"
+        android:gravity=""
+        android:text="Player Age: "
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.351" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="182dp"
+        android:layout_height="41dp"
+        android:gravity=""
+        android:text="Player Score: "
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="182dp"
+        android:layout_height="41dp"
+        android:gravity=""
+        android:text="Faced Overs: "
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.551" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="182dp"
+        android:layout_height="41dp"
+        android:gravity=""
+        android:text="Player Centuries: "
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.651" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="182dp"
+        android:layout_height="41dp"
+        android:gravity=""
+        android:text="Player Half-Centuries: "
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.743" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="182dp"
+        android:layout_height="41dp"
+        android:gravity=""
+        android:text="Player Wickets: "
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.837" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="165dp"
+        android:layout_height="173dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="210dp"
+        android:layout_marginBottom="497dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sel" />
+    />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
